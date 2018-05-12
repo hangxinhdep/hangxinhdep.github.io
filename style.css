@@ -1,0 +1,226 @@
+
+*{
+	box-sizing: border-box;
+	font-family: Arial;
+}
+
+body {
+	margin: auto;
+	width: 98%;
+
+}
+ul li {
+	display: inline;
+	padding-right: 20px;
+}
+
+ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#right_menu {
+	float: right;
+}
+
+#cover {
+	height: 485px;
+	background-image: url('https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#text_cover {
+	color: white;
+	padding-top: 120px;
+	padding-left: 40px;
+}
+.abc {
+    width:32%;
+    display:inline-block;
+    padding-right: 33px;
+}
+
+.footer_item {
+    width:32%;
+    display:inline-block;
+    padding-right: 33px;
+}
+#footer {
+	padding-left: 40px;
+	background-color: #ebebe0;
+	padding-bottom: 40px;
+}
+
+img {
+	min-width: 100%;
+	margin-top: 30px; 
+}
+
+#content {
+	padding-left: 40px;
+	background-color: #e1e1d0;
+}
+
+#content h2 {
+	margin: 0;
+	padding-top: 30px;
+}
+
+#content p {
+	margin-bottom: 0;
+}
+
+#text_cover p, h1{
+	margin: 0;
+}
+
+.footer_item a {
+	color: #00ffff;
+	text-decoration: none;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    /* For tablets: */
+    #cover {
+	background-image: none;
+   }
+
+   #menu_navigation {
+   	background-color: #636262;
+   	height: 100px;
+   }
+
+   ul {
+   	line-height: 100px;
+   }
+
+   ul li a {
+   	color: white;
+   }
+
+   #cover {
+   	height: auto;
+   }
+
+   #text_cover {
+	    color: black;
+	    padding: 0;
+	}
+
+	#text_cover h1, #text_cover p {
+		padding-top: 30px;
+		padding-left: 30px;
+	}
+
+	#content {
+		background-color: white;
+		padding-left: 30px;
+	}
+
+	.abc {
+		width: 45%;
+	}
+
+	#footer {
+		background-color: white;
+		padding: 30px;
+	}
+
+	.footer_item {
+		width: 100%;
+		padding-top: 30px;
+	}
+
+	.footer_item a {
+		color: blue;
+		text-decoration: underline;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .abc {
+		width: 100%;
+	}
+
+	img {
+		min-width: auto;
+		max-width: 100%;
+	}
+
+	#cover {
+	background-image: none;
+   }
+
+   #menu_navigation {
+   	background-color: #636262;
+   	height: 100px;
+   	width: 100%;
+   	margin: 0;
+   	padding:0;
+   	position: relative;
+   }
+
+   ul {
+   	margin: 0;
+   	padding: 0;
+   	width: 90%;
+   	position: absolute;
+   	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+
+   ul li {
+   	display: inline-block;
+   	padding: 0;
+   	width: 18%;
+   	text-align: center;
+   }
+
+   ul li a {
+   	color: white;
+   }
+
+   #cover {
+   	height: auto;
+   }
+
+   #text_cover {
+	    color: black;
+	    padding: 0;
+	}
+
+	#text_cover h1, #text_cover p {
+		padding-top: 30px;
+		padding-left: 30px;
+	}
+
+	#content {
+		background-color: white;
+		padding-left: 30px;
+	}
+
+	#footer {
+		background-color: white;
+		padding: 30px;
+	}
+
+	.footer_item {
+		width: 100%;
+		padding-top: 30px;
+	}
+
+	.footer_item a {
+		color: black;
+		text-decoration: underline;
+	}
+
+	#right_menu {
+		float:none;
+		display: inline;
+	}
+
+}
